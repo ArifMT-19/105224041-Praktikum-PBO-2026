@@ -38,33 +38,3 @@ public class Produk {
     }
   }
 }
-
-class MakananRingan extends Produk{
-  private int masaSimpan;
-
-  public MakananRingan(String namaProduk, double harga, int masaSimpan) {
-    super(namaProduk, harga);
-    setMasaSimpan(masaSimpan);
-  }
-
-  public int getMasaSimpan() {
-    return masaSimpan;
-  }
-
-  public void setMasaSimpan(int masaSimpan) {
-    if (masaSimpan > 0) {
-      this.masaSimpan = masaSimpan;
-    } else {
-      System.out.println("Masa simpan harus lebih dari 0");
-    }
-  }
-
-  @Override
-  public void tampilkanDetail() {
-    super.tampilkanDetail();
-    System.out.println("Masa Simpan: " + masaSimpan + " hari");
-  }
-
-}
-
-
