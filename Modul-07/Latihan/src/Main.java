@@ -40,10 +40,3 @@ Meskipun objeknya LampuPintar, Java tetap mengacu pada tipe referensi saat kompi
 
   }
 }
-
-/* Analisis Nomor 5:
-Error terjadi karena Java memeriksa metode berdasarkan tipe referensi,
-bukan objek aslinya. Variabel alat1 bertipe PerangkatPintar, 
-dan di kelas itu tidak ada metode aturKecerahan(), jadi compiler menolak. 
-Meskipun objeknya LampuPintar, Java tetap mengacu pada tipe referensi saat kompilasi.
-*/
