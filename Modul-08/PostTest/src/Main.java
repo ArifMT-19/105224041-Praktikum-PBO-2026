@@ -13,35 +13,22 @@ public class Main {
 
       if(pengiriman instanceof LacakKargo) {
         LacakKargo lacak = (LacakKargo) pengiriman;
-        System.out.println(
-          "Status Lokasi : " +
-          lacak.cekLokasiTerakhir()
-        );
+        System.out.println("Status Lokasi : " + lacak.cekLokasiTerakhir());
       }
       double ongkosDasar = pengiriman.hitungOngkosKirim();
       double totalTagihan = ongkosDasar;
 
-      System.out.println(
-        "Ongkos Dasar  : Rp" +
-        ongkosDasar
-      );
+      System.out.println("Ongkos Dasar  : Rp" + ongkosDasar);
 
       if(pengiriman instanceof Asuransi) {
         Asuransi asuransi = (Asuransi) pengiriman;
         asuransi.cetakPolis();
         double premi = asuransi.hitungPremi(5000000);
 
-        System.out.println(
-          "Premi Asuransi : Rp" +
-          premi
-        );
+        System.out.println("Premi Asuransi : Rp" + premi);
         totalTagihan += premi;
       }
-
-      System.out.println(
-        "Total Tagihan : Rp" +
-        totalTagihan
-      );
+      System.out.println("Total Tagihan : Rp" + totalTagihan);
     }
   }
 }
