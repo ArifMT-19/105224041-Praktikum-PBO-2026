@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths":  [
+                                     "src"
+                                 ],
+    "java.project.outputPath":  "bin",
+    "java.project.referencedLibraries":  [
+                                             "lib/**/*.jar"
+                                         ],
+    "editor.tabSize":  2,
+    "editor.insertSpaces":  true,
+    "editor.detectIndentation":  false
+}
