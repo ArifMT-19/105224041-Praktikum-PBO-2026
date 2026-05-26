@@ -1,30 +1,18 @@
 import java.util.*;
 
 public class Anggota {
-  private String id, nama, tipe;
+  String idAnggota, nama, tipe;
 
-  public Anggota(String id, String nama, String tipe) {
-    this.id = id;
+  public Anggota(String idAnggota, String nama, String tipe) {
+    this.idAnggota = idAnggota;
     this.nama = nama;
     this.tipe = tipe;
   }
 
-  public String getId() {
-    return id;
-  }
-
-  public String getNama() {
-    return nama;
-  }
-
-  public String getTipe() {
-    return tipe;
-  }
-
   public void tampil() {
-    System.out.println("Id: " + id);
-    System.out.println("Nama: " + nama);
-    System.out.println("Tipe: " + tipe);
+    System.out.println("ID Anggota : " + idAnggota);
+    System.out.println("Nama       : " + nama);
+    System.out.println("Tipe       : " + tipe);
     System.out.println();
   }
 
@@ -39,11 +27,11 @@ public class Anggota {
     }
 
     Anggota anggota = (Anggota) obj;
-    return Objects.equals(id, anggota.id);
+    return Objects.equals(idAnggota, anggota.idAnggota);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id);
+    return Objects.hash(idAnggota);
   }
 }

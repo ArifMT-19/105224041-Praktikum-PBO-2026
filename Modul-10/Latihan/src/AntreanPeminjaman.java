@@ -1,12 +1,12 @@
 import java.util.*;
 
 public class AntreanPeminjaman {
-  private Deque<String> antrean = new LinkedList<>();
+  Deque<String> antrean = new LinkedList<>();
 
   public void tambah(Anggota anggota, String isbn) {
-    String data = anggota.getId() + "#" + isbn;
+    String data = anggota.idAnggota + "#" + isbn;
 
-    if (anggota.getTipe().equalsIgnoreCase("Dosen")) {
+    if (anggota.tipe.equalsIgnoreCase("Dosen")) {
       antrean.addFirst(data);
     } else {
       antrean.addLast(data);
