@@ -6,6 +6,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Kalkulator kalkulator = new Kalkulator();
 
+        System.out.println("Soal 1: Input Harga Menu Dasar");
         try {
             System.out.print("Masukkan angka pembilang: ");
             int pembilang = input.nextInt();
