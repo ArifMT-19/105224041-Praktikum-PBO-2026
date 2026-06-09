@@ -6,7 +6,7 @@ public class RekeningBank {
     setSaldo(saldo);
   }
 
-  public int getRekenig(){
+  public int getRekening(){
     return rekening;
   }
 
@@ -15,10 +15,10 @@ public class RekeningBank {
   }
 
   public void setRekening(int rekening){
-    if (rekening == 0){
-    this.rekening = rekening;
+    if (rekening != 0){
+      this.rekening = rekening;
     } else {
-      System.out.println("Rekening tidak boleh kosong");
+      System.out.println("Nomor rekening tidak boleh 0");
     }
   }
 
@@ -31,7 +31,11 @@ public class RekeningBank {
   }
 
   public void tambahSaldo(int saldo){
-    this.saldo += saldo;
+    if (saldo > 0){
+      this.saldo += saldo;
+    } else {
+      System.out.println("Penambahan saldo harus positif");
+    }
   }
 
   public void cetakRekening(){

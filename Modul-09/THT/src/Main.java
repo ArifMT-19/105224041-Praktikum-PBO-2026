@@ -11,7 +11,7 @@ public class Main {
     CustomerService cs = new CustomerService();
     int pilih;
 
-    do {
+    do {P
       System.out.println("\n=== NEOBANK ===");
       System.out.println("1. Registrasi Nasabah");
       System.out.println("2. Buka Rekening");
